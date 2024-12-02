@@ -1,4 +1,4 @@
-package com.andystubbs.adventofcode2023.util
+package com.andystubbs.adventofcode2024.util
 
 class FileReader
 

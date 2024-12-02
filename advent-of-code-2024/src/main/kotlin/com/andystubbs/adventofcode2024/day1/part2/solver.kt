@@ -1,6 +1,6 @@
-package com.andystubbs.adventofcode2023.day1.part2
+package com.andystubbs.adventofcode2024.day1.part2
 
-import com.andystubbs.adventofcode2023.util.readInput
+import com.andystubbs.adventofcode2024.util.readInput
 fun main() {
 
     val input = readInput("/day1/part2/input.txt")

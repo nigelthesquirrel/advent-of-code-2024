@@ -1,6 +1,6 @@
-package com.andystubbs.adventofcode2023.day1.part1
+package com.andystubbs.adventofcode2024.day1.part1
 
-import com.andystubbs.adventofcode2023.util.readInput
+import com.andystubbs.adventofcode2024.util.readInput
 import kotlin.math.abs
 
 fun main() {
