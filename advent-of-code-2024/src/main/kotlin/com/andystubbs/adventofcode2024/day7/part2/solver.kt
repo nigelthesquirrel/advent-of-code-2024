@@ -33,7 +33,12 @@ fun main() {
                     if(operator == '+') total += operand
                     if(operator == '*') total *= operand
                     if(operator == '|') total = concat(total, operand)
+
+                    if(total > item.first) {
+                        return@forEach
+                    }
                 }
+
                 if(total == item.first) {
                     result += item.first
                     return@run
