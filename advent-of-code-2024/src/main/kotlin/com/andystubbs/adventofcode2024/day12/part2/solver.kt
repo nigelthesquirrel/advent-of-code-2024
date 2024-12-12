@@ -47,7 +47,6 @@ fun main() {
     println(total)
 }
 
-
 fun extractRegion(flower: Char, location: Location, grid: List<List<Char>>): Set<Location> {
 
     val region = mutableSetOf<Location>()
@@ -75,14 +74,6 @@ fun canMove(flower: Char,location: Location, movement: Movement, region: Set<Loc
     if (locationOutOfBounds(proposedLocation, grid)) return false
 
     return grid[proposedLocation.row][proposedLocation.col] == flower
-}
-
-fun calculateFenceForLocation(location: Location, region: Set<Location>): Int {
-
-    var fences = 4
-    for (move in MOVEMENTS)
-        if (region.contains(applyMove(location, move))) fences--
-    return fences
 }
 
 fun getNumberSidesHorizontal(region: Set<Location>, movement: Movement): Int {
