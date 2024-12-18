@@ -4,6 +4,13 @@ package com.andystubbs.adventofcode2024.util
 data class Location(var row: Int, var col: Int)
 data class Movement(var row: Int, var col: Int)
 
+val UP = Movement(-1, 0)
+val DOWN = Movement(1, 0)
+val LEFT = Movement(0, -1)
+val RIGHT = Movement(0, 1)
+
+val MOVEMENTS = listOf(UP, DOWN, LEFT, RIGHT)
+
 fun applyMove(location: Location, movement: Movement) = Location(location.row + movement.row, location.col + movement.col)
 
 fun updateGrid(location: Location, grid: List<List<Char>>, char: Char): List<List<Char>> {
